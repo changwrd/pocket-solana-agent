@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Pocket",
+    "slug": "pocket",
+    "scheme": "pocket",
+    "version": "1.0.0",
+    "newArchEnabled": true,
+    "icon": "./src/data/pocket_crypto_icon.png",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0E12",
+    "plugins": [
+      "expo-router",
+      "expo-dev-client",
+      "expo-asset",
+      "expo-font",
+      "expo-secure-store",
+      "expo-background-task",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./src/data/pocket_crypto_icon.png",
+          "backgroundColor": "#0A0E12",
+          "resizeMode": "contain",
+          "imageWidth": 200
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.pocket.agental"
+    },
+    "android": {
+      "package": "com.pocket.agental",
+      "adaptiveIcon": {
+        "foregroundImage": "./src/data/pocket_crypto_icon.png",
+        "backgroundColor": "#0A0E12"
+      }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "c13fb18e-11ad-4942-a0d7-30b6b4f62153"
+      }
+    }
+  }
+}
