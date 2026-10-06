@@ -141,7 +141,7 @@ export default function Home() {
 
         <View className="mt-3 mb-1">
           <PocketButton
-            label={running ? "Running…" : "Run now (demo)"}
+            label={running ? "Running…" : "Run now"}
             icon="flash"
             onPress={handleRunNow}
             disabled={running || agentBalanceSol < 0.002}
