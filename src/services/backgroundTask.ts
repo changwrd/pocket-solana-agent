@@ -75,14 +75,7 @@ export async function maybeRunAgent(): Promise<AgentCheckResult> {
 
   const agentKeypair = await getOrCreateAgentKeypair();
   const balance = await getSolBalance(agentKeypair.publicKey);
-  console.log(
-    "[agent] agent address:",
-    agentKeypair.publicKey.toBase58(),
-    "balance:",
-    balance,
-    "tier:",
-    tier.name,
-  );
+  console.log("[agent] balance:", balance, "tier:", tier.name);
   if (balance < 0.002) {
     console.log("[agent] skipped: balance too low (need >= 0.002 SOL)");
     return "low_balance";
